@@ -4,4 +4,4 @@ FROM students
 JOIN cohorts ON cohorts.id = students.cohort_id
 JOIN assistance_requests ON assistance_requests.student_id = students.id
 GROUP BY cohorts.name
-ORDER BY AVG(assistance_requests.completed_at - assistance_requests.started_at);
+ORDER BY AVG(assistance_requests.completed_at - assistance_requests.started_at);  
